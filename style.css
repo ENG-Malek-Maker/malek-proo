@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -165,7 +164,7 @@ ul {
     color: var(--primary-color);
 }
 
-/* المشاريع */
+/* المشاريع المحدثة والمنسقة بالكامل */
 .projects-section {
     padding: 80px 10%;
     background: #0b1120;
@@ -182,24 +181,41 @@ ul {
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
 }
 
 .project-info {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-info h3 {
     margin-bottom: 15px;
+    color: var(--text-white);
 }
 
 .project-info p {
     color: var(--text-gray);
     font-size: 0.95rem;
     margin-bottom: 20px;
+    flex-grow: 1; /* لجعل الكروت متساوية في الارتفاع */
 }
 
 .tags {
     margin-bottom: 20px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .tags span {
@@ -208,12 +224,38 @@ ul {
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 0.8rem;
-    margin-left: 5px;
 }
 
-.github-link {
-    color: var(--primary-color);
+/* روابط المشاريع */
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+}
+
+.project-link {
+    color: #4ADE80; /* اللون الأخضر الموحد لروابط جيت هاب */
     font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+.project-link:hover {
+    color: var(--text-white);
+    text-decoration: underline;
+}
+
+.project-link.preview {
+    color: #38bdf8; /* لون أزرق مميز لروابط المعاينة المباشرة */
+}
+
+.project-link.preview:hover {
+    color: var(--text-white);
 }
 
 /* التواصل */
@@ -242,11 +284,12 @@ ul {
 
 .email { background: #1e293b; border: 1px solid #334155; }
 .github { background: #24292e; color: white; }
+.instagram { background: #e1306c; color: white; }
+.whatsapp { background: #25d366; color: white; }
 
 .contact-btn:hover {
     transform: scale(1.05);
 }
-
 
 footer {
     padding: 30px;
@@ -257,18 +300,7 @@ footer {
     border-top: 1px solid #334155;
 }
 
-/* الجوال */
-@media (max-width: 768px) {
-    .nav-links { display: none; } /* يفضل إضافة قائمة منسدلة مستقبلاً */
-    .hero h1 { font-size: 2.5rem; }
-    .projects-grid { grid-template-columns: 1fr; }
-}
-
-
-/* ... كل الكود القديم الموجود عندك ... */
-
-/* أضف هذا في نهاية الملف تماماً */
-
+/* الأشرطة المتقدمة (Progress Bars) */
 .skills-container {
     max-width: 800px;
     margin: 0 auto;
@@ -302,26 +334,9 @@ footer {
     border-radius: 10px;
 }
 
-
-
-.project-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px; /* مسافة بسيطة بين الرابطين */
-    margin-top: 15px;
-}
-
-/* لتوحيد اللون الأخضر للرابطين */
-.github-link {
-    color: #4ADE80 !important; /* أو اللون الأخضر المستخدم في مشروعك */
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 5px;
-}
-
-.github-link:hover {
-    text-decoration: underline;
+/* توافق الشاشات (الجوال) */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero h1 { font-size: 2.5rem; }
+    .projects-grid { grid-template-columns: 1fr; }
 }
