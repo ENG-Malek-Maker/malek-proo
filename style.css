@@ -455,3 +455,8 @@ footer {
     .projects-grid { grid-template-columns: 1fr; }
     .filter-switch { flex-wrap: wrap; }
 }
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
