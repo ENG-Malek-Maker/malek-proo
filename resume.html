@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية الرقمية | مالك عبد اللطيف</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <div class="top-bar">
+            <div class="filter-buttons">
+                <button class="btn-filter active" data-lang-ar="الكل" data-lang-en="All" onclick="filterCategory('all')">الكل</button>
+                <button class="btn-filter" data-lang-ar="تطوير ويب" data-lang-en="Web Dev" onclick="filterCategory('web')">تطوير ويب</button>
+                <button class="btn-filter" data-lang-ar="تطوير ألعاب" data-lang-en="Game Dev" onclick="filterCategory('games')">تطوير ألعاب</button>
+            </div>
+            
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button onclick="downloadPDF()" style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--primary-color); color: var(--primary-color); padding: 8px 16px; border-radius: 30px; font-size: 13px; cursor: pointer; font-weight: 700; font-family: 'Tajawal'; display: flex; align-items: center; gap: 5px;">
+                    <span data-lang-ar="تحميل PDF 📥" data-lang-en="Download PDF 📥">تحميل PDF 📥</span>
+                </button>
+                <button class="lang-switch" onclick="toggleLanguage()" id="langBtn">English (EN)</button>
+            </div>
+        </div>
+
+        <div id="resume-content">
+            
+            <div class="profile-card">
+                <h1 class="profile-name" data-lang-ar="مالك عبد اللطيف" data-lang-en="Malik Abdul Latif">مالك عبد اللطيف</h1>
+                <span class="profile-title" data-lang-ar="Full-Stack Web Developer / مهندس برمجيات" data-lang-en="Full-Stack Web Developer / Software Engineer">Full-Stack Web Developer / مهندس برمجيات</span>
+                
+                <div class="contact-info">
+                    <a href="mailto:malekabdalteef@gmail.com" class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        malekabdalteef@gmail.com
+                    </a>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span data-lang-ar="تعز، اليمن" data-lang-en="Taiz, Yemen">تعز، اليمن</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header">
+                    <div class="section-icon">📝</div>
+                    <h2 class="section-title" data-lang-ar="الملخص المهني" data-lang-en="Professional Summary">الملخص المهني</h2>
+                </div>
+                <div class="item-desc" data-lang-ar="خريج تكنولوجيا معلومات ومهندس برمجيات شغوف، متخصص في تطوير تطبيقات الويب المتكاملة (Full-Stack). أمتلك مهارات قوية في هندسة الواجهات البرمجية وتصميم الأنظمة الذكية القابلة للتوسع وفقاً للمعايير الهندسية المعاصرة." data-lang-en="An IT graduate and passionate software engineer specializing in Full-Stack web development. Highly skilled in architecting scalable interfaces and back-end logic, applying contemporary software engineering paradigms to produce efficient web systems.">
+                    خريج تكنولوجيا معلومات ومهندس برمجيات شغوف، متخصص في تطوير تطبيقات الويب المتكاملة (Full-Stack). أمتلك مهارات قوية في هندسة الواجهات البرمجية وتصميم الأنظمة الذكية القابلة للتوسع وفقاً للمعايير الهندسية المعاصرة.
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header">
+                    <div class="section-icon">🛠️</div>
+                    <h2 class="section-title" data-lang-ar="المهارات التقنية" data-lang-en="Technical Skills">المهارات التقنية</h2>
+                </div>
+                <div class="skills-grid-resume">
+                    <span class="skill-badge">PHP</span>
+                    <span class="skill-badge">Laravel</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">React.js</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header">
+                    <div class="section-icon">💼</div>
+                    <h2 class="section-title" data-lang-ar="الخبرة المهنية والمشاريع الحرة" data-lang-en="Professional Experience & Freelancing">الخبرة المهنية والمشاريع الحرة</h2>
+                </div>
+                <div class="list-item">
+                    <div class="item-role" data-lang-ar="مطور أنظمة ومواقع ويب مستقل (Freelance Full-Stack Developer)" data-lang-en="Freelance Full-Stack Developer">مطور أنظمة ومواقع ويب مستقل (Freelance Full-Stack Developer)</div>
+                    <div class="item-company" data-lang-ar="المشاريع المستقلة الخاصة" data-lang-en="Independent Software Projects">المشاريع المستقلة الخاصة</div>
+                    <div class="item-desc" data-lang-ar="برمجة وتطوير مواقع إلكترونية تفاعلية مخصصة (مثل أنظمة حجز الصالونات، مواقع المطاعم، وأنظمة إدارة المخازن والمستودعات). تصميم لوحات تحكم مرنة وقواعد بيانات متكاملة مبنية على السرعة والأمان التام." data-lang-en="Conducted comprehensive development for dynamic custom web systems including salon booking systems, restaurant websites, and comprehensive inventory management apps. Architected agile admin back-ends and optimized database performance.">برمجة وتطوير مواقع إلكترونية تفاعلية مخصصة (مثل أنظمة حجز الصالونات، مواقع المطاعم، وأنظمة إدارة المخازن والمستودعات). تصميم لوحات تحكم مرنة وقواعد بيانات متكاملة مبنية على السرعة والأمان التام.</div>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header">
+                    <div class="section-icon">🎓</div>
+                    <h2 class="section-title" data-lang-ar="التعليم الأكاديمي" data-lang-en="Education">التعليم الأكاديمي</h2>
+                </div>
+                <div class="list-item">
+                    <div class="item-role" data-lang-ar="بكالوريوس في تكنولوجيا المعلومات (IT)" data-lang-en="B.Sc. in Information Technology (IT)">بكالوريوس في تكنولوجيا المعلومات (IT)</div>
+                    <div class="item-company" data-lang-ar="جامعة العلوم والتكنولوجيا - صنعاء" data-lang-en="University of Science and Technology - Sana'a">جامعة العلوم والتكنولوجيا - صنعاء</div>
+                    <div class="item-desc" data-lang-ar="حاصل على منحة تفوق أكاديمي كاملة وممولة لأربع سنوات من مؤسسة هائل سعيد أنعم وشركاه الخيرية لالتزام البرمجي المتميز والتحصيل العلمي الفائق." data-lang-en="Awarded a fully-funded four-year academic merit scholarship by the Hayel Saeed Anam & Co. Charitable Foundation for exceptional academic standing and computing proficiency.">حاصل على منحة تفوق أكاديمي كاملة وممولة لأربع سنوات من مؤسسة هائل سعيد أنعم وشركاه الخيرية لالتزام البرمجي المتميز والتحصيل العلمي الفائق.</div>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header">
+                    <div class="section-icon">🚀</div>
+                    <h2 class="section-title" data-lang-ar="أبرز المشاريع الهندسية" data-lang-en="Featured Engineering Projects">أبرز المشاريع الهندسية</h2>
+                </div>
+                
+                <div class="list-item project-card-resume" data-category="web">
+                    <div class="item-role" data-lang-ar="نظام إدارة المستودعات والمخازن المتكامل" data-lang-en="Enterprise Inventory Management System">نظام إدارة المستودعات والمخازن المتكامل</div>
+                    <div class="item-company" data-lang-ar="تصنيف: تطوير ويب (Full-Stack)" data-lang-en="Category: Full-Stack Web Development">تصنيف: تطوير ويب (Full-Stack)</div>
+                    <div class="item-desc" data-lang-ar="نظام يتيح تتبع حركة الأصناف وإدارة المبيعات مع لوحة تحكم ذكية تعتمد على تكنولوجيا Laravel وقاعدة بيانات MySQL لمعالجة سريعة لبيانات المخزون." data-lang-en="A robust web application built on Laravel and MySQL backend to seamlessly track internal asset distribution and streamline enterprise supply chain operations.">نظام يتيح تتبع حركة الأصناف وإدارة المبيعات مع لوحة تحكم ذكية تعتمد على تكنولوجيا Laravel وقاعدة بيانات MySQL لمعالجة سريعة لبيانات المخزون.</div>
+                </div>
+                
+                <div class="list-item project-card-resume" data-category="games" style="margin-top: 20px;">
+                    <div class="item-role" data-lang-ar="لعبة حماية الأبراج الاستراتيجية ثنائية الأبعاد" data-lang-en="2D Strategic Tower Defense Game">لعبة حماية الأبراج الاستراتيجية ثنائية الأبعاد</div>
+                    <div class="item-company" data-lang-ar="تصنيف: تطوير ألعاب وعناصر التحكم" data-lang-en="Category: Game Development & Simulation">تصنيف: تطوير ألعاب وعناصر التحكم</div>
+                    <div class="item-desc" data-lang-ar="تطوير لعبة استراتيجية متميزة ثنائية الأبعاد باستخدام بايثون ومكتبة Pygame مع بناء ميكانيكيات مخصصة لهجمات الأعداء وتطوير أنظمة الدفاع الذاتية." data-lang-en="Designed and built an immersive desktop arcade game leveraging Pygame architectures, featuring computational grid structures and state-machine pathfinding for moving actors.">تطوير لعبة استراتيجية متميزة ثنائية الأبعاد باستخدام بايثون ومكتبة Pygame مع بناء ميكانيكيات مخصصة لهجمات الأعداء وتطوير أنظمة الدفاع الذاتية.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="resume-script.js"></script>
+</body>
+</html>

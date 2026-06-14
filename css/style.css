@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. التنسيقات العامة والأساسية (Global Styles) - مشتركة
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +10,9 @@
 }
 
 :root {
-    --primary-color: #10b981; /* لون الزمردي المشابه للموقع الأساسي */
-    --bg-dark: #090d16;       /* تعميق اللون الداكن ليتماشى مع موقع علاء */
-    --bg-card: #131c2e;       /* كروت كحلي داكن احترافي */
+    --primary-color: #10b981; /* اللون الزمردي الأساسي للموقع */
+    --bg-dark: #090d16;       /* اللون الداكن العميق للخلفية */
+    --bg-card: #131c2e;       /* لون الكروت الكحلي الداكن الاحترافي */
     --text-white: #f8fafc;
     --text-gray: #94a3b8;
     --accent-blue: #38bdf8;
@@ -31,7 +34,9 @@ ul {
     list-style: none;
 }
 
-/* القائمة العلوية */
+/* ==========================================================================
+   2. القائمة العلوية وهيكل المدونة (index.html)
+   ========================================================================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -74,7 +79,7 @@ ul {
     background: var(--primary-color);
     color: #000 !important;
     padding: 10px 22px;
-    border-radius: 30px; /* جعل الحواف دائرية بالكامل لأسلوب عصري */
+    border-radius: 30px;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
     transition: transform 0.3s, box-shadow 0.3s !important;
@@ -179,7 +184,7 @@ ul {
     font-size: 1.05rem;
 }
 
-/* قسم الخدمات الجديد */
+/* قسم الخدمات */
 .services-section {
     padding: 80px 10%;
     background: #0c1424;
@@ -220,7 +225,7 @@ ul {
     font-size: 0.95rem;
 }
 
-/* المهارات */
+/* قسم المهارات التقنية للمدونة */
 .skills-section {
     padding: 80px 10%;
 }
@@ -253,13 +258,12 @@ ul {
     color: var(--primary-color);
 }
 
-/* معرض الأعمال والتصنيفات (الفلترة) */
+/* معرض الأعمال والفرز بالتصنيفات */
 .projects-section {
     padding: 80px 10%;
     background: #070b14;
 }
 
-/* ستايل أزرار الفرز */
 .filter-switch {
     display: flex;
     justify-content: center;
@@ -283,7 +287,6 @@ ul {
     color: var(--primary-color);
 }
 
-/* آليات الفلترة بالـ CSS النقي */
 #all:checked ~ .filter-switch label[for="all"],
 #web-apps:checked ~ .filter-switch label[for="web-apps"],
 #games:checked ~ .filter-switch label[for="games"] {
@@ -395,7 +398,7 @@ ul {
     color: var(--accent-blue);
 }
 
-/* التواصل */
+/* قسم التواصل والتذييل للمدونة */
 .contact-section {
     padding: 100px 10%;
     text-align: center;
@@ -447,13 +450,178 @@ footer {
     border-top: 1px solid #1e293b;
 }
 
-/* التوافق مع الجوال */
+/* ==========================================================================
+   3. التنسيقات المخصصة لصفحة السيرة الذاتية المستقلة (resume.html)
+   ========================================================================== */
+.resume-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: var(--bg-card);
+    padding: 15px 25px;
+    border-radius: 16px;
+    border: 1px solid #1e293b;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-filter, .lang-switch {
+    padding: 8px 18px;
+    background: #090d16;
+    border: 1px solid #1e293b;
+    border-radius: 30px;
+    color: var(--text-white);
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-filter.active, .btn-filter:hover, .lang-switch:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.section-box {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #1e293b;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 10px;
+}
+
+.section-icon {
+    font-size: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin: 0;
+}
+
+.profile-card {
+    text-align: center;
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 25px;
+    border: 1px solid #1e293b;
+    border-top: 4px solid var(--primary-color);
+}
+
+.profile-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile-title {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.contact-item svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.skills-grid-resume {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-badge {
+    background: #090d16;
+    color: var(--primary-color);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.list-item {
+    margin-bottom: 15px;
+}
+
+.item-role {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-white);
+}
+
+.item-company {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+    margin: 4px 0 8px;
+}
+
+.item-desc {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ==========================================================================
+   4. شاشات الجوال والتصميم المتجاوب (Responsive Web Design)
+   ========================================================================== */
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero h1 { font-size: 2.6rem; }
     .hero-desc { font-size: 1.1rem; }
     .projects-grid { grid-template-columns: 1fr; }
     .filter-switch { flex-wrap: wrap; }
+    
+    /* جوال السيرة الذاتية */
+    .top-bar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .profile-name { font-size: 1.8rem; }
+    .contact-info { flex-direction: column; align-items: center; gap: 10px; }
 }
 
 img, video {
