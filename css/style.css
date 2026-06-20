@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Cairo', sans-serif; /* تم التعديل إلى خط Cairo ليكون أكثر كثافة وجمالاً */
     scroll-behavior: smooth;
 }
 
@@ -67,7 +67,7 @@ ul {
 }
 
 .nav-links a {
-    font-weight: 500;
+    font-weight: 600; /* تم زيادة الكثافة */
     transition: color 0.3s;
 }
 
@@ -116,7 +116,7 @@ ul {
 .hero h1 {
     font-size: 3.8rem;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 900; /* تم رفع الكثافة لأقصى حد لإبراز عنوان الاسم والترحيب */
 }
 
 .highlight {
@@ -128,6 +128,7 @@ ul {
     color: var(--text-gray);
     max-width: 750px;
     margin: 0 auto 35px;
+    font-weight: 600; /* نصوص الوصف ممتلئة وواضحة */
 }
 
 .hero-btns {
@@ -162,6 +163,7 @@ ul {
     gap: 8px;
     transition: 0.3s;
     background: rgba(255, 255, 255, 0.02);
+    font-weight: bold;
 }
 
 .btn-secondary:hover {
@@ -182,6 +184,7 @@ ul {
     color: var(--text-gray);
     margin-bottom: 50px;
     font-size: 1.05rem;
+    font-weight: 600;
 }
 
 /* قسم الخدمات */
@@ -218,11 +221,13 @@ ul {
 .service-card h3 {
     margin-bottom: 15px;
     font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .service-card p {
     color: var(--text-gray);
     font-size: 0.95rem;
+    font-weight: 600;
 }
 
 /* قسم المهارات التقنية للمدونة */
@@ -277,7 +282,7 @@ ul {
     border: 1px solid #1e293b;
     border-radius: 30px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700; /* ممتلئ */
     font-size: 0.9rem;
     transition: all 0.3s;
 }
@@ -348,6 +353,7 @@ ul {
 .project-info h3 {
     margin-bottom: 12px;
     font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .project-info p {
@@ -355,6 +361,7 @@ ul {
     font-size: 0.95rem;
     margin-bottom: 20px;
     flex-grow: 1;
+    font-weight: 600;
 }
 
 .tags {
@@ -369,7 +376,7 @@ ul {
     padding: 4px 12px;
     border-radius: 4px;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .project-links {
@@ -382,7 +389,7 @@ ul {
 
 .project-link {
     color: #4ADE80;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 0.88rem;
     display: flex;
     align-items: center;
@@ -412,6 +419,7 @@ ul {
 .contact-container h2 {
     font-size: 2.3rem;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .contact-links {
@@ -448,6 +456,7 @@ footer {
     color: var(--text-gray);
     font-size: 0.9rem;
     border-top: 1px solid #1e293b;
+    font-weight: 600;
 }
 
 /* ==========================================================================
@@ -482,7 +491,7 @@ footer {
     border-radius: 30px;
     color: var(--text-white);
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
     transition: 0.3s;
 }
 
@@ -519,6 +528,7 @@ footer {
     margin: 0;
 }
 
+/* تعديل كارت البروفايل بالكامل ليتوافق مع أوزان وجوانب خط Cairo */
 .profile-card {
     text-align: center;
     background: var(--bg-card);
@@ -531,23 +541,26 @@ footer {
 
 .profile-name {
     font-size: 2.2rem;
-    font-weight: 700;
+    font-weight: 900; /* ممتلئ وضخم للبروفايل الرئيسي */
     margin-bottom: 10px;
 }
 
 .profile-title {
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 700; /* تم زيادة الكثافة */
     font-size: 1.1rem;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
+/* تنسيق حاوية معلومات الاتصال المدمجة لمالك لتدعم العناصر الـ 5 بمرونة وتناسق */
 .contact-info {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px 25px; /* أبعاد مريحة بين العناصر */
     flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .contact-item {
@@ -555,7 +568,13 @@ footer {
     align-items: center;
     gap: 8px;
     color: var(--text-gray);
-    font-size: 0.9rem;
+    font-size: 0.95rem; /* حجم خط متناسق */
+    font-weight: 600;    /* كثافة متوسطة واضحة جداً */
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: var(--text-white);
 }
 
 .contact-item svg {
@@ -576,6 +595,7 @@ footer {
     padding: 6px 14px;
     border-radius: 8px;
     font-size: 0.9rem;
+    font-weight: 700;
     border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
@@ -593,11 +613,13 @@ footer {
     color: var(--accent-blue);
     font-size: 0.9rem;
     margin: 4px 0 8px;
+    font-weight: 600;
 }
 
 .item-desc {
     color: var(--text-gray);
     font-size: 0.95rem;
+    font-weight: 600;
 }
 
 .hidden {
@@ -621,7 +643,14 @@ footer {
         align-items: center;
     }
     .profile-name { font-size: 1.8rem; }
-    .contact-info { flex-direction: column; align-items: center; gap: 10px; }
+    
+    /* عند فتح الجوال تترتب العناصر عمودياً بشكل فخم ومتناسق */
+    .contact-info { 
+        flex-direction: column; 
+        align-items: flex-start; /* ترتيب محاذي جهة البداية للمظهر الاحترافي */
+        gap: 12px; 
+        width: fit-content;
+    }
 }
 
 img, video {
@@ -629,29 +658,25 @@ img, video {
     height: auto;
 }
 
-
 /* تنسيق زر السيرة الذاتية في القائمة العلوية */
 .nav-links .nav-resume-btn {
-    color: #ffffff; /* لون النص الافتراضي أبيض مثل بقية الروابط */
-    font-weight: 500;
+    color: #ffffff; 
+    font-weight: 700; /* زيادة الكثافة */
     font-size: 0.95rem;
     padding: 6px 14px;
-    border-radius: 4px; /* حواف ناعمة متناسقة مع بقية عناصر الموقع */
+    border-radius: 4px; 
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 6px; /* مسافة بين الأيقونة والنص */
+    gap: 6px; 
 }
 
 /* تأثير مرور الماوس (Hover Effect) المتناسق مع الثيم الأخضر */
 .nav-links .nav-resume-btn:hover {
-    color: #22c55e; /* يتغير النص للون الأخضر النيون */
-    background: rgba(34, 197, 94, 0.1); /* خلفية خضراء خفيفة جداً شفافة */
-    transform: translateY(-2px); /* حركة خفيفة للأعلى عند التمرير */
+    color: #22c55e; 
+    background: rgba(34, 197, 94, 0.1); 
+    transform: translateY(-2px); 
 }
-
-
-
 
 /* تصميم حاوية المهارات وأشرطة التقدم */
 .skills-progress-container {
@@ -676,21 +701,21 @@ img, video {
 
 .skill-name {
     font-size: 0.95rem;
-    font-weight: 500;
-    color: #e2e8f0; /* لون نص فاتح ومريح للعين */
+    font-weight: 700; /* تعديل الكثافة */
+    color: #e2e8f0; 
 }
 
 .skill-percent {
     font-size: 0.9rem;
-    font-weight: 700;
-    color: #22c55e; /* جُعلت النسبة المئوية باللون الأخضر النيون المتناسق */
+    font-weight: 700; 
+    color: #22c55e; 
 }
 
 /* خلفية شريط التقدم */
 .progress-bar-bg {
     width: 100%;
     height: 8px;
-    background: rgba(255, 255, 255, 0.05); /* رمادي داكن شفاف جداً */
+    background: rgba(255, 255, 255, 0.05); 
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -699,7 +724,7 @@ img, video {
 /* امتلاء شريط التقدم باللون الأخضر المتوهج */
 .progress-bar-fill {
     height: 100%;
-    background: linear-gradient(90deg, #22c55e, #4ade80); /* تدرج نيون أخضر فخم */
+    background: linear-gradient(90deg, #22c55e, #4ade80); 
     border-radius: 10px;
     transition: width 1s ease-in-out;
 }
@@ -713,4 +738,199 @@ html[dir="ltr"] .progress-bar-fill {
 html[dir="rtl"] .progress-bar-fill {
     position: absolute;
     right: 0;
+}
+
+/* تنسيق شبكة المهارات الشخصية */
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* توزيع مرن حسب مساحة الشاشة */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* تنسيق البطاقة الصغيرة لكل مهارة */
+.soft-skill-item {
+    background: #090d16; /* لون داكن متباين مع الكرت الأساسي */
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 700; /* وزن كثيف متناسق مع خط Cairo الجديد */
+    color: #f8fafc;
+    transition: all 0.3s ease;
+}
+/* تنسيق شبكة المهارات الشخصية - جعل الأبعاد متناسقة للأسطر */
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* تنسيق البطاقة الشفافة والأكثر تناسقاً */
+.soft-skill-item {
+    /* جعل الخلفية شفافة مأخوذة من لون الخلفية الداكنة بدلاً من اللون المصمت */
+    background: rgba(9, 13, 22, 0.4); 
+    /* إضافة تأثير ضبابي شفاف ناعم خلف البطاقة */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    /* حدود ناعمة جداً غير حادة */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 12px 16px;
+    
+    display: flex;
+    align-items: center;
+    /* محاذاة العناصر والرموز لتبدأ بشكل منظم ومتناسق من اليمين أو اليسار */
+    justify-content: flex-start; 
+    gap: 12px;
+    
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #e2e8f0; /* لون نص مريح ومتناسق مع الشفافية */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* تأثير التمرير الاندماجي الفخم */
+.soft-skill-item:hover {
+    border-color: rgba(16, 185, 129, 0.3); /* توهج بلون الثيم الأخضر بشكل هادئ */
+    background: rgba(16, 185, 129, 0.08); /* لون خلفية أخضر خفيف جداً وشفاف */
+    transform: translateY(-2px);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+}
+
+/* لضمان بقاء الترتيب متناسقاً في الأجهزة المختلفة (الرمز ثم النص) */
+html[dir="rtl"] .soft-skill-item {
+    direction: rtl;
+}
+html[dir="ltr"] .soft-skill-item {
+    direction: ltr;
+}
+
+/* تعديل الأحجام لشاشات الجوال */
+@media (max-width: 480px) {
+    .soft-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .soft-skill-item {
+        padding: 10px;
+        font-size: 0.85rem;
+        gap: 8px;
+    }
+}
+
+
+
+/* حاوية البطاقات المهنية */
+.pro-skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* تنسيق البطاقة الطولية الشفافة */
+.pro-skill-card {
+    background: rgba(9, 13, 22, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* تأثير التمرير للبطاقة */
+.pro-skill-card:hover {
+    border-color: rgba(16, 185, 129, 0.3);
+    background: rgba(16, 185, 129, 0.06);
+    transform: translateX(-3px); /* حركة خفيفة لليمين عند التمرير تعطي طابعاً تفاعلياً */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* دعم قلب اتجاه الحركة عند تحويل الموقع للغة الإنجليزية */
+html[dir="ltr"] .pro-skill-card:hover {
+    transform: translateX(3px);
+}
+
+/* تفاصيل النصوص داخل البطاقة */
+.pro-skill-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-grow: 1;
+}
+
+.pro-skill-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.pro-skill-desc {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin: 0;
+}
+
+/* المربع الجانبي الصغير المخصص للأيقونة */
+.pro-skill-icon-box {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--accent-blue);
+    flex-shrink: 0;
+    margin-right: 15px; /* مسافة افتراضية */
+}
+
+/* ضبط المسافات للأيقونة حسب اتجاه اللغة */
+html[dir="rtl"] .pro-skill-icon-box {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+html[dir="ltr"] .pro-skill-icon-box {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* شاشات الجوال */
+@media (max-width: 480px) {
+    .pro-skill-card {
+        padding: 15px;
+    }
+    .pro-skill-title {
+        font-size: 1rem;
+    }
+    .pro-skill-desc {
+        font-size: 0.8rem;
+    }
+    .pro-skill-icon-box {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+}
+
+.pro-skill-icon-box {
+    /* الكود السابق الخاص بك كما هو ونضيف له فقط: */
+    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1));
 }
